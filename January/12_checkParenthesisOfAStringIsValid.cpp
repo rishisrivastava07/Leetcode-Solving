@@ -5,6 +5,7 @@ public:
 
         if(n % 2 != 0) return false;
 
+        // Approach - 01 with extra space
         stack<int> openStk;
         stack<int> openCloseStk;
 
@@ -30,5 +31,27 @@ public:
         }
 
         return openStk.empty();
+    
+        // Approach - 02 without extra space
+        int openCount = 0, closeCount = 0;
+        // for open brackets
+        for(int i = 0; i < n; i++){
+            if(s[i] == '(' || locked[i] == '0'){
+                openCount += 1;
+            } else openCount -= 1;
+
+            if(openCount < 0) return false;
+        }
+
+        // for close brackets
+        for(int i = n-1; i >= 0; i--){
+            if(s[i] == ')' || locked[i] == '0'){
+                closeCount += 1;
+            } else closeCount -= 1;
+
+            if(closeCount < 0) return false;
+        }
+
+        return true;
     }
 };
