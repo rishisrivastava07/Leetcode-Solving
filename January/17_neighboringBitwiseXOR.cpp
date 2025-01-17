@@ -1,5 +1,6 @@
 class Solution {
 public:
+    // Approach 01 
     bool doesValidArrayExist(vector<int>& derived) {
         int n = derived.size();
         vector<int> original(n);
@@ -21,5 +22,17 @@ public:
         if(original[n-1] ^ original[0] == derived[n-1]) return true;
 
         return false;
+    }
+
+    // Approach 02
+    bool doesValidArrayExist(vector<int>& derived) {
+        int n = derived.size();
+
+        int result = 0;
+        for(int bit = 0; bit < n; bit++){
+            result ^= derived[bit];
+        }
+
+        return result == 0 ? true : false;
     }
 };
