@@ -20,8 +20,8 @@ For better understanding of concepts and problem-solving techniques, I follow **
 Here’s a structured list of my solved problems, categorized month-wise:
 
 ### 📆 2025
-- **January** → [LeetCode Solutions - Jan 2025](./monthly_solutions/January_2025.md)
-- **February** → [LeetCode Solutions - Feb 2025](./monthly_solutions/February_2025.md)
+- **January** → [LeetCode Solutions - Jan 2025](January)
+- **February** → [LeetCode Solutions - Feb 2025](February)
 
 *(Continue adding links for upcoming months)*
 
