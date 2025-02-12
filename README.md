@@ -5,9 +5,9 @@ Welcome to my LeetCode journey! I'm **Rishi Srivastava**, a passionate problem s
 
 This modular structure allows easy navigation across different aspects of my problem-solving journey. You can explore:
 
-- 📆 **[Problem of the Day (POTD)](README-POTD.md)**
-- 🏆 **[LeetCode Contests](README.md)**
-- 📚 **[DSA Notes](README.md)**
+- 📆 **[Problem of the Day (POTD)](https://github.com/rishisrivastava07/Leetcode-Solving/tree/main/problem-of-the-day)**
+- 🏆 **[LeetCode Contests](https://github.com/rishisrivastava07/Leetcode-Solving/tree/main/contest)**
+- 📚 **[DSA Notes](https://github.com/rishisrivastava07/Leetcode-Solving/tree/main/data-structures)**
 
 ---
 
