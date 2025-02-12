@@ -5,7 +5,7 @@ Welcome to my LeetCode journey! I'm **Rishi Srivastava**, a passionate problem s
 
 This modular structure allows easy navigation across different aspects of my problem-solving journey. You can explore:
 
-- 📆 **[Problem of the Day (POTD)](README.md)**
+- 📆 **[Problem of the Day (POTD)](README-POTD.md)**
 - 🏆 **[LeetCode Contests](README.md)**
 - 📚 **[DSA Notes](README.md)**
 
