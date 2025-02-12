@@ -5,9 +5,9 @@ Welcome to my LeetCode journey! I'm **Rishi Srivastava**, a passionate problem s
 
 This modular structure allows easy navigation across different aspects of my problem-solving journey. You can explore:
 
-- 📆 **[Problem of the Day (POTD)](README-POTD.md)**
-- 🏆 **[LeetCode Contests](README-Contests.md)**
-- 📚 **[DSA Notes](README-DSA.md)**
+- 📆 **[Problem of the Day (POTD)](README.md)**
+- 🏆 **[LeetCode Contests](README.md)**
+- 📚 **[DSA Notes](README.md)**
 
 ---
 
@@ -32,9 +32,6 @@ For better understanding of concepts and problem-solving techniques, I follow **
 ```
 📂 LeetCode-Journey/
 │── README.md  (Main Summary File)
-│── README-POTD.md  (Problem of the Day)
-│── README-Contests.md  (LeetCode Contests)
-│── README-DSA.md  (DSA Notes)
 │── POTD/  (Contains problem solutions by month)
 │── Contests/  (Contains contest solutions)
 │── DSA/  (Contains categorized DSA topics)
