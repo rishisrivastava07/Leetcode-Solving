@@ -3,11 +3,12 @@
 This section contains my **Data Structures and Algorithms (DSA) Notes**, covering key concepts, implementations, and problem-solving strategies.
 
 ## **Topics Covered**
-- [BinarySearching](https://github.com/rishisrivastava07/DSA/tree/main/BinarySearching "BinarySearching")
-- [Graph](https://github.com/rishisrivastava07/DSA/tree/main/Graphs "Graph")
-- [Arrays](https://github.com/rishisrivastava07/DSA/tree/main/Arrays "Arrays")
-- [SlidingWindow](https://github.com/rishisrivastava07/DSA/tree/main/Arrays "SlidingWindow")
-- [DP](https://github.com/rishisrivastava07/DSA/tree/main/Arrays "DP")
+- [Arrays](Arrays)
+- [BinarySearching](BinarySearching)
+- [DP](DP)
+- [Graph](Graphs)
+- [SlidingWindow](SlidingWindow)
+- [Strings](Strings)
 
 ## **Why Study DSA?**
 - Strengthens problem-solving abilities.
