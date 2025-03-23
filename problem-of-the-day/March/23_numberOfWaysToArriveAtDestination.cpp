@@ -43,7 +43,7 @@ class Solution {
                     }
                 } 
             }
-    
+
             return pathCount[n-1];
         }
     };
