@@ -26,18 +26,18 @@ class Solution {
 
 
     // Approach - 02
-
     class Solution {
         public:
             int minimumIndex(vector<int>& nums) {
                 int n = nums.size();
             
-                int majority = 0;
+                int majority = -1;
                 int count = 0;
                 
                 for(int i = 0; i < n; i++){
                     if(count == 0){
                         majority = nums[i];
+                        count = 1;
                     } else if(majority == nums[i]){
                         count++;
                     } else {
