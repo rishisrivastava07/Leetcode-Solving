@@ -118,3 +118,56 @@ class Solution {
             return ans;
         }
     };
+
+// Approach - 02
+class Solution {
+    public:
+        vector<vector<int>> directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        vector<int> maxPoints(vector<vector<int>>& grid, vector<int>& queries) {
+            int n = grid.size();
+            int m = grid[0].size();
+    
+            int Q = queries.size();
+    
+            vector<pair<int, int>> sortedQ;
+            for(int i = 0; i < Q; i++){
+                sortedQ.push_back({queries[i], i});
+            }
+    
+            sort(begin(sortedQ), end(sortedQ));
+    
+            priority_queue<vector<int>, vector<vector<int>>, greater<>> pq;
+            vector<vector<bool>> visited(n, vector<bool> (m, false));
+    
+            vector<int> results(Q, 0);
+    
+            int points = 0;
+            pq.push({grid[0][0], 0, 0});
+            visited[0][0] = true;
+    
+            for(int i = 0; i < Q; i++){
+                int queryValue = sortedQ[i].first;
+                int idx        = sortedQ[i].second;
+                while(!pq.empty() && pq.top()[0] < queryValue){
+                    int i = pq.top()[1];
+                    int j = pq.top()[2];
+                    pq.pop();
+    
+                    points++;
+    
+                    for(auto &dir : directions){
+                        int i_ = i + dir[0];
+                        int j_ = j + dir[1];
+    
+                        if(i_ >= 0 && i_ < n && j_ >= 0 && j_ < m && !visited[i_][j_]){
+                            pq.push({grid[i_][j_], i_, j_});
+                            visited[i_][j_] = true;
+                        }
+                    }
+                }
+                results[idx] = points;
+            }
+    
+            return results;
+        }
+    };
